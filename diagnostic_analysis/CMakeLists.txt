@@ -6,6 +6,8 @@ find_package(catkin REQUIRED diagnostic_msgs rosbag roslib rostest)
 
 catkin_package(DEPENDS diagnostic_msgs rosbag roslib)
 
+catkin_python_setup()
+
 if(CATKIN_ENABLE_TESTING)
   catkin_add_nosetests(test/bag_csv_test.py)
 endif()
